@@ -86,7 +86,7 @@ function chkfinite(A::AbstractMatrix)
     #         throw(ArgumentError("matrix contains Infs or NaNs"))
     #     end
     # end
-    # return true
+    return true
 end
 
 function chkuplofinite(A::AbstractMatrix, uplo::AbstractChar)

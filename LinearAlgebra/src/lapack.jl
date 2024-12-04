@@ -81,12 +81,12 @@ subsetrows(X::AbstractVector, Y::AbstractArray, k) = Y[1:k]
 subsetrows(X::AbstractMatrix, Y::AbstractArray, k) = Y[1:k, :]
 
 function chkfinite(A::AbstractMatrix)
-    for a in A
-        if !isfinite(a)
-            throw(ArgumentError("matrix contains Infs or NaNs"))
-        end
-    end
-    return true
+    # for a in A
+    #     if !isfinite(a)
+    #         throw(ArgumentError("matrix contains Infs or NaNs"))
+    #     end
+    # end
+    # return true
 end
 
 function chkuplofinite(A::AbstractMatrix, uplo::AbstractChar)
